@@ -1,0 +1,47 @@
+{
+  "ready_to_publish": true,
+  "unit_tests_passed": 9,
+  "synthetic_end_to_end": true,
+  "private_market_prefix_parity": [
+    {
+      "model": "base",
+      "sessions": 324,
+      "both_costs": true,
+      "signals_and_full_ledger_match": true
+    },
+    {
+      "model": "pure_rev40",
+      "sessions": 324,
+      "both_costs": true,
+      "signals_and_full_ledger_match": true
+    },
+    {
+      "model": "control_rev40",
+      "sessions": 324,
+      "both_costs": true,
+      "signals_and_full_ledger_match": true
+    },
+    {
+      "model": "control_attention40",
+      "sessions": 324,
+      "both_costs": true,
+      "signals_and_full_ledger_match": true
+    },
+    {
+      "model": "joint2",
+      "sessions": 324,
+      "both_costs": true,
+      "signals_and_full_ledger_match": true
+    }
+  ],
+  "aggregate_metric_rows_verified": 20,
+  "public_figures": 17,
+  "private_path_and_secret_scan_passed": true,
+  "README_local_links_valid": true,
+  "notebook_valid": true,
+  "costs_bps": [
+    0,
+    10
+  ],
+  "raw_market_data_included": false
+}

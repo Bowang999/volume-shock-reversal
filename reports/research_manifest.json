@@ -1,0 +1,63 @@
+{
+  "data_asof": "2026-10-20",
+  "release_date": "2026-10-30",
+  "original_factor_id": "ECO0036",
+  "version": "EMA40",
+  "direction": 1,
+  "parameters": {
+    "return_window": 5,
+    "turnover_reference": 20,
+    "ema_span": 40
+  },
+  "costs_bps": [
+    0,
+    10
+  ],
+  "primary_book": "continuous daily long +100% short -100%, next-close execution",
+  "raw_market_data_included": false,
+  "all_history_previously_inspected": true,
+  "public_aggregates_contain_no_security_identifiers": true,
+  "main_metrics_independent_rows": 30,
+  "private_reference_full_path_tests": [
+    {
+      "model": "base",
+      "days": 3550,
+      "full10bp_python_ledger": true,
+      "all3costs_first120": true
+    },
+    {
+      "model": "pure_rev40",
+      "days": 3550,
+      "full10bp_python_ledger": true,
+      "all3costs_first120": true
+    },
+    {
+      "model": "control_rev40",
+      "days": 3550,
+      "full10bp_python_ledger": true,
+      "all3costs_first120": true
+    },
+    {
+      "model": "control_attention40",
+      "days": 3550,
+      "full10bp_python_ledger": true,
+      "all3costs_first120": true
+    },
+    {
+      "model": "joint2",
+      "days": 3550,
+      "full10bp_python_ledger": true,
+      "all3costs_first120": true
+    }
+  ],
+  "accounting_notes": {
+    "main": "continuous common-pool ledger across2025; no cash restart",
+    "deciles": "independent long-only groups; original publication pool; cash initialized separately per period; later starts2025-01-03",
+    "parameters": "all125 share a separately frozen daily pool; do not treat cross-study membership differences as improvements"
+  },
+  "references": [
+    "https://doi.org/10.1093/rfs/hhm079",
+    "https://doi.org/10.1016/j.finmar.2003.11.005",
+    "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf"
+  ]
+}

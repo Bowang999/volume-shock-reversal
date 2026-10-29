@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "volume-shock-reversal"
+version = "0.1.0"
+description = "Daily long-short volume-shock reversal research with IC and Rank IC diagnostics"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26", "pandas>=2.2", "bottleneck>=1.4", "numba>=0.61", "matplotlib>=3.8", "nbformat>=5.10"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
