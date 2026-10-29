@@ -12,7 +12,7 @@ The proposed explanation is transient order pressure or overreaction. It is a hy
 
 $$R^{(5)}_{i,t}=\prod_{k=0}^{4}(1+r_{i,t-k})-1$$
 $$AV_{i,t}=\frac{V_{i,t}}{\frac{1}{5}\sum_{k=1}^{5}V_{i,t-k}}-1$$
-$$F_{i,t}=\operatorname{EMA}_{40}\left[-R^{(5)}_{i,t}\max(AV_{i,t},0)\right]$$
+$$F_{i,t}=\mathrm{EMA}_{40}\left[-R^{(5)}_{i,t}\max(AV_{i,t},0)\right]$$
 
 The volume reference excludes today. Processing is average cross-sectional rank -> one joint industry / log-float-cap OLS -> population-z residual. Positive/negative signals target long +100% / short -100% of NAV, rebalanced daily at the **next close**. Gross target exposure is 200%; reported returns are per NAV. All source data end 2026-10-20.
 
